@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    Media (https://starwars.fandom.com/wiki/List_of_Star_Wars_media):
+    -novels (legends, (thingo), firstorder?)
+    -movies ()
+    -TV shows ()
+    -Games ()
+    
+-->
+<!-- 
+Palette:
+Black
+Green
+
+-->
+<html>
+<head>
+    <title>The Archive</title>
+    <link rel="icon" href="https://static.wikia.nocookie.net/starwars/images/2/2e/Holocron-TSWB.png">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- Consider instead of switching to differnt already existing pages, rewriting the content of a div with js -->
+    <div id="menuBar">
+        <h1><a href="#">THE ARCHIVE</a></h1>
+        <div class="topnav">
+            <a href="#homePage">Home</a>
+            <a href="#mediaPage">Media</a>
+            <a href="#characterPage">Characters</a>
+            <a href="#forumPage">Forums</a>
+            <!-- Thinking of changing this so it functions like the udemy account thing, with the circle and stuff -->
+            <a href="#settingsPage"><img id="gearIcon" src="gearIcon.svg" onmouseover="hoverg(this);" onmouseout="unhoverg(this);"></a>
+            <a href="#userPage"><img id="userIcon" src="userIcon.svg" onmouseover="hovers(this);" onmouseout="unhovers(this);"></a>
+            <form>
+                <img src="searchIcon.svg">
+                <input type="text" id="search" placeholder="Search media and characters" name="search">
+            </form>
+        </div>
+    </div>
+    <div id="mainContent">
+        <!--
+        <div id="homePage"></div>
+        <div id="mediaPage"></div>
+        <div id="characterPage"></div>
+        <div id="forumPage"></div>
+        -->
+    </div>
+</body>
+</html>

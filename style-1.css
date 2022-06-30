@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    zoom: 200%;
+}
+a {
+    color: gray;   
+    text-decoration: none; 
+}
+.title {
+    padding-top: 5%;
+    font-size: 200%;
+}
+#loginBlock button {
+    width: 90%;
+    height: 5%;
+    font-size: large;
+    -ms-transform: translateX(5%);
+    transform: translateX(5%);
+    border-radius: 5%/50%;
+    box-shadow: 0 0 6pt grey;
+    background-color: 	#dcd8d8;
+    border: none;
+    outline: none;
+}
+#loginBlock button:hover {
+    background-color: #FFFFFF;
+}
+.slides {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+#loginMenuBar button {
+    top: 1%;
+    color: black;
+    background-color: #80808000;
+    border: none;
+    outline: none;
+}
+#loginImage button:hover {
+    background-color: #80808060;
+    color: #FFFFFF;
+}
+#login {
+    position: absolute;
+    font-size: 120%;
+    left: 80.38%;
+}
+#register {
+    position: absolute;
+    font-size: 120%;
+    left: 84.2%;
+}
+#information {
+    position: absolute;
+    font-size: 120%;
+    left: 89.6%;
+}
+#help {
+    position: absolute;
+    font-size: 120%;
+    left: 96.6%;
+}
+#loginBlock {
+    position: absolute;
+    top: 0%/*2.5%*/;
+    left: 0%/*37.5%/*73.5%*/;
+    border-radius: 0%/*0% 10% 10% 0%/0% 5% 5% 0% /*10%/5%*/;
+    background-color: #000000B2;
+    color: #FFFFFF;
+    font-family: "Open sans", Helvetica, sans-serif;
+    width: 27%;
+    height: 100%;
+}
+#loginBlock h1 {
+    margin: 0px;
+    text-align: center;
+}
+#formLogin {
+    padding-top: 5%;
+    padding-left: 5%;
+    margin: 0px;
+    border: 0px;
+}
+#formLogin input {
+    padding-left: 8%;
+    width: 95%;
+    height: 5%;
+    font-size: 20px;
+    background-color: #FFFFFF;
+}
+#formLogin input:nth-of-type(1) {
+    margin-bottom: 4%;
+}
+#formLogin img:nth-of-type(1) {
+    position: absolute;
+    top: 12%;
+    left: 6%;
+    width: 7%;
+    height: auto;
+}
+#formLogin img:nth-of-type(2) {
+    position: absolute;
+    top: 19.4%;
+    left: 6%;
+    width: 7%;
+    height: auto;
+}
+#formRememberUser {
+    position: absolute;
+    left: 4.2%;
+}
+#formRegister {
+    padding-top: 5%;
+    padding-left: 5%;
+    margin: 0px;
+    border: 0px;
+}
+#formRegister input {
+    padding-left: 8%;
+    margin-bottom: 4%;
+    width: 95%;
+    height: 5%;
+    font-size: 20px;
+    background-color: #FFFFFF;
+}
+#formRegister input:nth-of-type(7) {
+    margin-bottom: 0%;
+}
+#formRegister img {
+    position: absolute;
+    margin-top: 1%;
+    left: 6%;
+    width: 7%;
+    height: auto;
+}
+#forgotPasswordDiv form {
+    padding-top: 5%;
+    padding-left: 5%;
+    margin: 0px;
+    border: 0px;
+}
+#forgotPasswordDiv form input {
+    padding-left: 8%;
+    margin-bottom: 4%;
+    width: 95%;
+    height: 5%;
+    font-size: 20px;
+    background-color: #FFFFFF;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    width: 89%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+#forgotPassword {
+    text-align: right;
+    padding-right: 5%;
+    margin: 1px;
+}
+#forgotPasswordDiv  p {
+    text-align: center;
+}
+#signUpLink, #signInLink, #forgotPasswordLink {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+#importantInfo {
+    font-size: 90%;
+}
+#signUp, #forgotPasswordDiv, #forgotPasswordTwo, #informationDiv, #helpDiv {
+    display: none;
+}
+#signUp p {
+    text-align: center;
+}
+#informationDiv p {
+    text-align: center;
+}
+#informationDiv img {
+    height: 15%;
+    width: auto;
+    margin-top: 10%;
+}
+#acknowledgment {
+    position: absolute;
+    color: #80808020;
+    top: 95%;
+    left: 87.4%;
+}

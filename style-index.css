@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    font-family: "Open sans", Helvetica, sans-serif;
+    zoom: 200%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#menuBar {
+    padding: 0%;
+    margin: 0%;
+    border-bottom: 1px solid black;
+}
+#menuBar h1 {
+    position: absolute;
+    top: 0.4%;
+    left: 0.5%;
+    font-size: 200%;
+    margin: 0;
+    padding: 0px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a img {
+    height: 5%;
+    width: auto;
+}
+.topnav a:nth-of-type(1) {
+    margin-left: 13%;
+}
+.topnav a:nth-of-type(5) {
+    float: right;
+    padding: 0;
+    padding-top: 0.5%;
+    padding-right: 0.5%;
+}
+.topnav a:nth-of-type(6){
+    float: right;
+    padding: 0;
+    padding-top: 0.5%;
+    padding-right: 0.5%;
+}
+.topnav form {
+    padding-top: 0.5%;
+}
+.topnav form img {
+    position: absolute;
+    top: 1.8%;
+    right: 33.5%;
+    height: 3.5%;
+    width: auto;
+}
+.topnav form input{
+    float: right;
+    padding-left: 2.5%;
+    height: 5%;
+    width: 30%;
+    border-radius: 4%/50%;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: #2A5DDE;
+}
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+#homePage {
+    position: absolute;
+    height: 93%;
+    width: 100%;
+}
+#mediaPage {
+    position: absolute;
+}
+#characterPage {
+    position: absolute;
+}
+#forumPage {
+    position: absolute;
+}
+#userPage {
+    position: absolute;
+}
+#settingsPage {
+    position: absolute;
+}
+#mediaPage, #characterPage, #forumPage, #userPage, #settingsPage {
+    display: none;
+}

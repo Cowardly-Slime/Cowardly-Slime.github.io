@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Archive</title>
+    <link rel="icon" href="https://static.wikia.nocookie.net/starwars/images/2/2e/Holocron-TSWB.png">
+    <link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+    <script>
+        function show(shown, hidden, hidden1, hidden2, hidden3) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          document.getElementById(hidden1).style.display='none';
+          document.getElementById(hidden2).style.display='none';
+          document.getElementById(hidden3).style.display='none';
+          return false;
+        }
+    </script>
+    <div id="loginImage">
+        <section>
+            <img id="signInImg" class="slides" src="https://wallpaperaccess.com/full/1200173.jpg">
+            <!--<img id="signUpImg" class="slides" src="https://starwarsblog.starwars.com/wp-content/uploads/2015/08/8_15_WDI_003.jpg">-->
+        </section>
+        <!-- Cool images
+            source - https://wallpaperaccess.com/star-wars-landscape
+        -->
+        <div id="loginMenuBar">
+            <a href="#" onclick="return show('signIn','signUp','forgotPasswordDiv','informationDiv','helpDiv');"><button id="login">Login</button></a>
+            <a href="#" onclick="return show('signUp','signIn','forgotPasswordDiv','informationDiv','helpDiv');"><button id="register">Register</button></a>
+            <a href="#" onclick="return show('informationDiv','signIn','signUp','forgotPasswordDiv','helpDiv');"><button id="information">Information</button></a>
+            <a href="#" onclick="return show('helpDiv','signIn','signUp','forgotPasswordDiv','informationDiv');"><button id="help">Help</button></a>
+        </div>
+        <p id="acknowledgment">Designed by: Cowardly Slime</p>
+    </div>
+    <div id="loginBlock">
+        <div id="signIn">
+            <h1 class="title">Login</h1>
+            <form id="formLogin">
+                <img src="mailIcon.svg">
+                <input type="text" id="Username" placeholder="Email Address" name="Username"><br>
+                <img src="lockIcon.svg">
+                <input type="password" id="Password" placeholder="Password" name="Password">
+            </form>
+            <form id="formRememberUser">
+                <input type="checkbox" id="rememberUser" name="rememberUser">
+                <label for="rememberUser">Remember Me</label>
+            </form>
+            <p id="forgotPassword"><a href="#" onclick="return show('forgotPasswordDiv','signIn','signUp','informationDiv','helpDiv');">Forgot password?</a></p>
+            <br>
+            <a href="index.html"><button id="loginButton" type="button">Sign In</button></a><!--
+            <div class="separator">OR</div>
+            <a href="#" onclick="return show('signUp','signIn','forgotPasswordDiv');"><button id="registerButton" type="button">Register</button></a>
+            -->
+            <p id="signUpLink"><a href="terms_of_service.html">Terms of Service</a> | <a href="privacy_policy.html">Privacy Policy</a></p>
+        </div>
+        <div id="signUp">
+            <style>
+            </style>
+            <h1 class="title">Register</h1>
+            <form id="formRegister">
+                <img src="nameIcon.svg">            
+                <input type="text" id="rFirstname" name="rFirstname" placeholder="First Name"><br>
+                <img src="nameIcon.svg">  
+                <input type="text" id="rLastname" name="rLastname" placeholder="Last Name"><br>
+                <img src="userIcon.svg">  
+                <input type="text" id="rUsername" name="rUsername" placeholder="Username"><br><br>
+
+                <img src="mailIcon.svg">  
+                <input type="text" id="rEmail" name="rEmail" placeholder="Email Address"><br>
+                <img src="lockIcon.svg">  
+                <input type="password" id="rPassword" name="rPassword" placeholder="Password"><br>
+                <img src="lockIcon.svg">  
+                <input type="password" id="rCPassword" name="rCPassword" placeholder="Confirm Password"><br><br>
+
+                <img src="classIcon.svg">  
+                <input type="text" id="rCareClass" name="rCareClass" placeholder="Care Class"><br>
+            </form>
+            <p>By submitting this form you agree to the <a href="terms_of_service.html">Terms of Service</a> and <a href="privacy_policy.html">Privacy Policy</a></p>
+            <a href="#"><button id="registerButton" type="button">Sign Up</button></a>
+        </div>
+        <div id="forgotPasswordDiv">
+            <h1 class="title">Forgot Password</h1>
+            <div id="forgotPasswordOne">
+                <p>We want to make sure its really you. In order to determine your identity, input your email and send the code, then enter that code and confirm.</p>
+                <form id="formForgot">
+                    <input type="text" id="fEmail" name="fEmail" placeholder="Email Address">
+                </form>
+                <a><button>Send Email</button></a>
+                <br><br><br>
+                <form id="formForgot">
+                    <input type="text" id="verificationCode" name="verificationCode" placeholder="Verification Code">
+                </form>
+                <a href="#" onclick="return show('forgotPasswordTwo','forgotPasswordOne','signIn','informationDiv','helpDiv')"><button>Confirm</button></a>
+                <p id="forgotPasswordLink"><a href="#" onclick="return show('signIn','forgotPasswordDiv','signUp','informationDiv','helpDiv');">return</a></p>
+            </div>
+            <div id="forgotPasswordTwo">
+                <form>
+                    <input type="text" id="newPassword" name="newPassword" placeholder="New Password">
+                    <input type="text" id="cNewPassword" name="cNewPassword" placeholder="Confirm New Password">
+                </form>
+            </div>
+        </div>
+        <div id="informationDiv">
+            <h1 class="title">Information</h1>
+            <p>
+                The Archive, named after the jedi archive, the legendary repisotory of information stored by the jedi order within the jedi temple on corrucsent, rumoured to contain all known knowledge in the galaxy, is a website made for PSHS students interested in the star wars universe to easily and thoroughly explore it.
+                <br><br>
+                This includes media, games, and characters from both the various forms of media and games.
+                <br><br>
+                The Archive allows users to not only view this information, but comment on it, discuss it, and share opions with other likeminded people. This can be achieved through the comment system, or the forum system.
+                <br><br>
+                So login and explore this sprawling universe, from the early hyperspace age, to the new jedi order, and much, much more. 
+                <br><br>
+                May the force be with you.
+                <br>
+                <!--Include three images (old republic, the empire and the new jedi order)-->
+                <img src="https://static.wikia.nocookie.net/starwars/images/2/2e/Holocron-TSWB.png">
+            </p>
+        </div>
+        <div id="helpDiv">
+            <h1 class="title">Help</h1>
+        </div>
+    </div>
+</body>
+</html>
